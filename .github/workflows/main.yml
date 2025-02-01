@@ -1,0 +1,22 @@
+# This is the name of your workflow (the title)
+name: Example GitHub Action
+
+# Define when you want the action to run
+on:
+  # This means the action will run on a push to the `main` branch
+  push:
+    branches:
+      - main  # You can change this to another branch name if needed
+
+# The jobs section defines what actions the GitHub action will perform
+jobs:
+  test:  # Name of the job (you can change this to something else)
+    runs-on: ubuntu-latest  # This means your action will run on the latest version of Ubuntu
+
+    steps:  # Each step is a command or action that you want to execute
+      - name: Checkout Repository
+        uses: actions/checkout@v2  # This step checks out your repository code to the runner
+
+      # Here's the step with your email in the name
+      - name: 22f3001435@ds.study.iitm.ac.in
+        run: echo "Hello, world!"  # This is just a simple command that outputs "Hello, world!" to the logs
